@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+body {
+    background-image: linear-gradient(90deg, rgba(253, 219, 146, 1), rgba(209, 253, 254, 1));
+
+}
+
+
+.ikimono {
+    background-image: url(../images/matinaka.png);
+    font-size: 25px;
+    background-size: cover;
+    width: 950px;
+    height: 580px;
+    color: rgb(249, 246, 250);
+    margin: 140px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ikimono-lyrics {
+    font-size: 25px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    margin-left: 80px;
+    text-shadow: 4px 4px 5px rgb(250, 72, 140);
+}
+
+.ikimono:hover {
+    background-image: url(../images/pop.png);
+    transition: all 2s;
+
+}
+
+.ttl {
+    padding: 60px;
+    padding-bottom: 30px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 29px;
+    text-shadow: 3px 3px 3px rgb(240, 113, 9);
+    
+}
