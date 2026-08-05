@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私の好きな映画</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero">
+
+
+        <div class="overlay"></div>
+
+        <div class="hero-text">
+
+            <h1>私の好きな映画</h1>
+
+            <p>プラダを着た悪魔</p>
+
+        </div>
+        <img src="images/1images.png" alt=""><br>
+
+
+    </header>
+
+
+    <section class="movie fade">
+
+        <div class="text">
+
+            <h2>ABOUT</h2>
+
+            <p>
+                アン・ハサウェイとメリル・ストリープが共演した、おしゃれに無頓着な女性が一流ファッション誌の鬼編集長の下で成長していく姿を描いた大ヒットコメディ映画。
+
+            </p>
+            <br><br>
+            <h3>好きな理由</h3>
+            <p>♦　綺麗で鮮やかなお洋服、アクセサリー。見てるだけでわくわくする。</p>
+            <p>♦　エミリーとアンディのやりとり。</p>
+            <p>♦　アン・ハサウェイがとにかく綺麗</p>
+
+            <br><br>
+
+            <p>
+            <h3>ストーリーと魅力</h3>
+            ♦　ミランダの悪魔のような無茶振りと叱責に耐え、洗練された姿へと変わっていく<br>
+            ♦　ジャーナリストを志す主人公アンディが、一流誌「ランウェイ」のカリスマ編集長ミランダのアシスタントになる。
+            </p>
+
+        </div>
+
+        <div>
+        </div>
+
+        <div class="image">
+
+            <img src="images/2images.png" alt="映画">
+
+        </div>
+
+    </section>
+
+
+    <section class="quote">
+
+        <h2>" Fashion is more than clothes "</h2>
+
+        <div class="video">
+            <iframe src="video/Fashion_brands_flowing_smoothly_202608041049.mp4" frameborder="0"></iframe>
+        </div>
+    </section>
+
+
+
+    <footer>
+
+        <p>MY FAVORITE MOVIE</p>
+
+    </footer>
+
+
+    <script>
+
+        const fade = document.querySelectorAll(".fade");
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                }
+
+            });
+
+        });
+
+        fade.forEach(el => observer.observe(el));
+
+
+        // パララックス風
+
+        window.addEventListener("scroll", () => {
+
+            const hero = document.querySelector(".hero img");
+
+            hero.style.transform = `translateY(${window.scrollY * 0.3}px) scale(1.05)`;
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
